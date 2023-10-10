@@ -1,0 +1,115 @@
+
+.panels {
+
+    display: flex;
+    justify-content: center;
+}
+
+
+.panel {
+    padding-top: 5%;
+
+    padding-bottom: 5%;
+    text-align: center;
+    position: relative;
+
+
+
+
+}
+
+
+.animation-container {
+    position: relative;
+
+    margin: 0;
+
+    padding: 0;
+    overflow: hidden;
+
+}
+
+
+.page-image-container{
+
+    position: relative;
+    height: 100%;
+
+    width: 100%;
+}
+
+
+ .mac-screen {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+
+}
+
+
+
+
+
+img.website-bk {
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 10%;
+    width: 100%;
+    animation: webskitebk 15s 0 ease;
+    -webkit-animation: webskitebk 15s 0 ease;
+    -moz-animation: webskitebk 15s 0 ease;
+    -ms-animation: webskitebk 15s 0 ease;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes webskitebk {
+    0% {
+        top: 10%
+    }
+
+    25% {
+        top: 10%
+    }
+
+    100% {
+        top: -195%
+    }
+}
+
+
+
+
+@media (orientation: landscape) {
+
+
+
+   .mac-screen {
+
+
+    height: 75vh;
+
+
+    /* Adds a height to keep the mac screen as a representation of desktop */
+
+   }
+
+
+
+   img.website-bk {
+
+    height : calc(75vh * 3.168);
+
+    /* height of the mac screen image * the correct ratio of the pages image to the mac screen image */
+
+    /* i.e the original height of the mac screen image is 1000px and the height of the pages image is 3168px */
+    
+}
+
+    
+
+
+}
+
+
